@@ -23,17 +23,18 @@ class CashSlot
 end
 
 require 'sinatra'
+
 get '/' do
   %{
-    <html>
-      <body>
-        <form action="/withdraw" method="post">
-          <label for="amount">Amount</label>
-          <input type="text" id="amount" name="amount">
-          <button type="submit">Withdraw</button>
-        </form>
-      </body>
-    </html>
+  <html>
+    <body>
+      <form action="/withdraw" method="post">
+        <label for="amount">Amount</label>
+        <input type="text" id="amount" name="amount">
+        <button type="submit">Withdraw</button>
+      </form>
+    </body>
+  </html>
   }
 end
 
