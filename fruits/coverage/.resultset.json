@@ -1,0 +1,24 @@
+{
+  "Cucumber Features": {
+    "coverage": {
+      "/Users/ben.may/Documents/Projects/Cucumber_Book/TheCucumberBook2ndEd/fruits/features/step_definitions/fruit_steps.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ben.may/Documents/Projects/Cucumber_Book/TheCucumberBook2ndEd/fruits/features/step_definitions/rest_steps.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1553091997
+  }
+}

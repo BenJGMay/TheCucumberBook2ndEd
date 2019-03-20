@@ -1,6 +1,9 @@
 require 'childprocess'
 require 'timeout'
 require 'httparty'
+require 'simplecov'
+
+SimpleCov.start
 
 server = ChildProcess.build("rackup", "--port", "9999")
 server.start

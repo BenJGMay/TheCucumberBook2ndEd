@@ -8,4 +8,5 @@ group :test do
   gem 'rspec', '3.5.0'
   gem 'httparty', '0.14.0'
   gem 'childprocess', '0.5.9'
+  gem 'simplecov'
 end
