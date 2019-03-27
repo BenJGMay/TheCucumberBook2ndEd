@@ -5,6 +5,8 @@ When(/^I search for "([^"]*)"$/) do |query|
 end
 
 Then(/^the results should be:$/) do |expected_results|
+  # Wait until a matching element is found on the page
+  expect(page).to have_css('ol.results li')
   results = [['content']] + page.all('ol.results li').map do |li|
     [li.text]
   end
