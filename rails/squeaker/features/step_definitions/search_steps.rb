@@ -4,11 +4,10 @@ When(/^I search for "([^"]*)"$/) do |query|
   click_button('Search')
 end
 
-Then(/^the results should be:$/) do |table|
+Then(/^the results should be:$/) do |expected_results|
   results = [['content']] + page.all('ol.results li').map do |li|
     [li.text]
   end
 
-  puts results.join("\n")
-  pending
+  expected_results.diff!(results)
 end
